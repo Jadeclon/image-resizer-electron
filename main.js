@@ -32,6 +32,8 @@ function createMainWindow() {
 	}
 
 	mainWindow.loadFile(path.join(__dirname, './renderer/index.html'))
+
+	console.log('Electron App is running')
 }
 
 // Create about window

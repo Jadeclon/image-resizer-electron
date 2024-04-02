@@ -1,7 +1,7 @@
 const { test, expect, _electron: electron } = require('@playwright/test')
 
 test('example test', async () => {
-	const electronApp = await electron.launch({ args: ['.'] })
+	const electronApp = await electron.launch({ args: ['./main.js'] })
 	const isPackaged = await electronApp.evaluate(async ({ app }) => {
 		// This runs in Electron's main process, parameter here is always
 		// the result of the require('electron') in the main app script.
